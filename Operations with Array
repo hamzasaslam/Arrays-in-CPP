@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    double numbers[] = {1, 2, 3, 4, 5};
+    double sum = 0;
+    double count = 0;
+    double average;
+
+    for (double &i : numbers)
+    {
+        cout << i;
+
+        sum += i;
+        ++count;
+    }
+    cout << "\n"
+         << sum << "\n";
+    cout << count << "\n";
+    average = sum / count;
+    cout << "Average is" << average;
+
+    return 0;
+}
